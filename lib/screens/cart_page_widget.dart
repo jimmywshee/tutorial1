@@ -15,8 +15,7 @@ class CartPage extends StatelessWidget {
         appBar: AppBar(title: Text("Cart")),
         body: Column(
           children: [
-            SizedBox(
-              height: 500,
+            Expanded(
               child: ListView.builder(
                 itemCount: cartItems.length,
                 itemBuilder: (context, index) {

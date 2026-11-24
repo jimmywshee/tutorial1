@@ -52,8 +52,7 @@ class _ProductListPageState extends State<ProductListPageWidget> {
         appBar: AppBar(title: Text("Product List")),
         body: Column(
           children: [
-            SizedBox(
-              height: 500,
+            Expanded(
               child: ListView.builder(
                 itemCount: products.length,
                 itemBuilder: (context, index) {
